@@ -217,7 +217,60 @@ a {
   100% { transform: translateX(-50%); }
 }
 
+/* ==========================================================================
+   Animated Ocean Wave Background
+   ========================================================================== */
 
+.ocean-wave-bg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 25vh; /* Adjust height to cover the bottom */
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background: transparent;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat-x;
+  background-position: 0 bottom;
+  background-size: 50% 100%;
+}
+
+.wave1 {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,40 C150,80 350,0 600,40 C850,80 1050,0 1200,40 L1200,120 L0,120 Z' fill='rgba(0,119,208,0.1)'/%3E%3C/svg%3E");
+  animation: wave-move 12s linear infinite;
+  z-index: 1;
+}
+
+.wave2 {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,50 C200,20 400,70 600,50 C800,30 1000,60 1200,50 L1200,120 L0,120 Z' fill='rgba(0,119,208,0.15)'/%3E%3C/svg%3E");
+  animation: wave-move 18s linear infinite reverse;
+  z-index: 2;
+}
+
+.wave3 {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,60 C300,100 500,10 700,60 C900,110 1100,20 1200,60 L1200,120 L0,120 Z' fill='rgba(0,119,208,0.2)'/%3E%3C/svg%3E");
+  animation: wave-move 25s linear infinite;
+  z-index: 3;
+}
+
+@keyframes wave-move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
 /* ==========================================================================
    Preloader Screen
