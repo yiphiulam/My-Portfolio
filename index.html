@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuri Yip 葉曉琳 | Creative Portfolio</title>
+  <meta name="description" content="葉曉琳的互動設計與視覺傳達作品集。身為宜智科技專案實習生、北科大互動設計碩士生，致力於美學設計、技術創新與商業價值的完美融合。">
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- Custom Inertial Cursor -->
+  <div id="cursor-dot" class="cursor-dot"></div>
+  <div id="cursor-ring" class="cursor-ring">
+    <div class="cursor-marquee-container">
+      <div class="cursor-marquee">
+        <span class="cursor-marquee-text"></span>
+        <span class="cursor-marquee-text"></span>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Preloader Screen -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo outfit">YURI YIP</div>
+      <div class="preloader-bar-bg">
+        <div id="preloader-bar" class="preloader-bar"></div>
+      </div>
+      <div id="preloader-percent" class="preloader-percent outfit">0</div>
+      <div class="preloader-subtitle">Loading Creative Space...</div>
+    </div>
+  </div>
+
+  <!-- Main Layout Container -->
+  <div id="main-content" class="main-content">
+
+    <!-- Fixed Navigation Bar -->
+    <header class="header">
+      <div class="nav-container">
+        <a href="#hero" class="logo outfit magnetic">YURI YIP</a>
+        <nav class="nav-links">
+          <a href="#about" class="nav-link magnetic">About</a>
+          <a href="#journey" class="nav-link magnetic">Journey</a>
+          <a href="#projects" class="nav-link magnetic">Projects</a>
+          <a href="#contact" class="nav-link magnetic">Contact</a>
+        </nav>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle magnetic" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Hero Section -->
+    <section id="hero" class="hero-section">
+
+      <div class="hero-container">
+        <div class="hero-title-wrapper">
+          <div class="hero-label outfit reveal-text">CREATIVE INTERACTION & VISUAL DESIGN</div>
+          <h1 class="hero-name outfit reveal-text">YURI YIP</h1>
+          <h2 class="hero-subtitle reveal-text">葉曉琳</h2>
+        </div>
+
+        <div class="hero-quote-wrapper">
+          <p class="hero-quote playfair">"The flow of water, the heart of me. Water ebb and flow, leading us forward."
+          </p>
+          <p class="hero-description reveal-text">
+            融合視覺美學與互動體驗的設計者。專注於 UX/UI 設計、跨領域整合，並將新興技術（AI/XR）轉化為直覺的數位體驗。
+          </p>
+        </div>
+
+        <div class="hero-actions scroll-indicator-wrapper">
+          <a href="#projects" class="btn btn-primary magnetic" data-cursor-text="VIEW">
+            Explore Projects <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <div class="scroll-down-indicator">
+            <span class="mouse-icon"></span>
+            <span class="mouse-scroll-text outfit">SCROLL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- About Me Section (Bento Grid) -->
+    <section id="about" class="about-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag outfit">01 / WHO I AM</span>
+          <h2 class="section-title">About Me / 關於我</h2>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Bento Box: Profile Biography -->
+          <div class="bento-card bento-bio col-span-2 row-span-2">
+            <div class="bento-badge outfit">PROJECT INTERN @ EZEETECH</div>
+            <h3 class="bento-title">核心理念 & 背景</h3>
+            <p class="bio-text">
+              身為 <strong>宜智科技（EZeeTech）</strong> 的專案實習生，我運用自身在使用者體驗（UX/UI）和跨領域整合方面的專長，為產品開發和以使用者為中心的解決方案提供支援。
+            </p>
+            <p class="bio-text">
+              同時，我也積極參與全國性的創新挑戰賽，包括 ATCC 商業案例大賽和全國創新創業大賽，並參與新興技術（AI/XR）與商業策略交叉領域的專案。
+            </p>
+            <p class="bio-text">
+              目前，我正在 <strong>國立台北科技大學（NTUT）</strong> 攻讀互動設計碩士學位，並擁有 <strong>明志科技大學（MCUT）</strong>
+              視覺傳達設計專業的背景。我的學術背景使我能夠將複雜的使用者痛點轉化為直覺的數位體驗。我精通互動式多媒體設計、數位行銷分析和生成式人工智慧應用，致力於將美學設計、技術創新和實際商業價值完美融合。
+            </p>
+          </div>
+
+          <!-- Bento Box: Hobbies & Photography -->
+          <div class="bento-card bento-hobbies">
+            <div class="bento-icon"><i class="fa-solid fa-camera"></i></div>
+            <h3 class="bento-title-small">Photography & Mind</h3>
+            <p class="bento-desc">
+              性格隨和但做事果斷。喜愛在生活中尋找微小的細節與色彩漸變。攝影是我的熱情所在，特別是捕捉風景、建築與人們活動的瞬間。
+            </p>
+          </div>
+
+          <!-- Bento Box: Specialized Skills -->
+          <div class="bento-card bento-skills row-span-2">
+            <h3 class="bento-title">Expertise / 專業技能</h3>
+            <ul class="skills-list">
+              <li>
+                <div class="skill-info">
+                  <span class="skill-name">UI / UX Design</span>
+                  <span class="skill-val">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-info">
+                  <span class="skill-name">Visual Communication</span>
+                  <span class="skill-val">95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-info">
+                  <span class="skill-name">Interactive Media (AI/XR)</span>
+                  <span class="skill-val">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-info">
+                  <span class="skill-name">Digital Marketing & Analytics</span>
+                  <span class="skill-val">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-info">
+                  <span class="skill-name">3D Modeling & Animation</span>
+                  <span class="skill-val">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bento Box: Certifications -->
+          <div class="bento-card bento-certs">
+            <h3 class="bento-title-small">Certifications</h3>
+            <div class="certs-list">
+              <div class="cert-item">
+                <i class="fa-solid fa-award text-accent"></i>
+                <span>TOEIC® Listening and Reading Test (Score: 705)</span>
+              </div>
+              <div class="cert-item">
+                <i class="fa-solid fa-award text-accent"></i>
+                <span>TQC Office Software Application - Practical Level</span>
+              </div>
+              <div class="cert-item">
+                <i class="fa-solid fa-award text-accent"></i>
+                <span>Digital Drawing Elementary Course Certificate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Box: Profile Photo -->
+          <div class="bento-card bento-photo">
+            <img src="assets/yuri_profile.jpg" alt="葉曉琳 Yuri Yip" class="profile-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Experience & Education (Timeline) -->
+    <section id="journey" class="journey-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag outfit">02 / MY PATH</span>
+          <h2 class="section-title">My Journey / 學習與經歷</h2>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Internship Column -->
+          <div class="timeline-col">
+            <h3 class="timeline-col-title outfit"><i class="fa-solid fa-briefcase"></i> Internships</h3>
+            <div class="timeline-track">
+              <!-- Item 1 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date outfit">July 2026 - Present</div>
+                <h4 class="timeline-role">Project Intern (專案實習生)</h4>
+                <div class="timeline-company">宜智科技 (EZeeTech)</div>
+                <p class="timeline-desc">
+                  參與新興技術（AI/XR）與商業策略交叉領域專案，運用使用者體驗（UI/UX）和跨領域整合專長支援產品開發，優化以使用者為中心的解決方案。
+                </p>
+              </div>
+              <!-- Item 2 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date outfit">April 2024 - Sept 2024</div>
+                <h4 class="timeline-role">Graphic Designer | Intern</h4>
+                <div class="timeline-company">Minzui Innovation Ltd.</div>
+                <p class="timeline-desc">
+                  負責平面設計與視覺形象塑造，協助專案視覺規劃與行銷素材設計，增強品牌宣傳效能。
+                </p>
+              </div>
+              <!-- Item 3 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date outfit">Sept 2023 - Jan 2024</div>
+                <h4 class="timeline-role">User Interface Designer | Intern</h4>
+                <div class="timeline-company">UXI Design Ltd.</div>
+                <p class="timeline-desc">
+                  參與 UXI DESIGN 官方網站重設專案。負責設計洞察（Design Insights）頁面設計，並為網站改版繪製與定義 icons。
+                </p>
+              </div>
+              <!-- Item 4 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date outfit">July 2021 - Aug 2021</div>
+                <h4 class="timeline-role">Multimedia Designer | Summer Intern</h4>
+                <div class="timeline-company">Hong Kong Telecommunications Limited</div>
+                <p class="timeline-desc">
+                  負責多媒體視覺內容創作與影音編輯，規劃行銷素材以利品牌的推廣。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Column -->
+          <div class="timeline-col">
+            <h3 class="timeline-col-title outfit"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+            <div class="timeline-track">
+              <!-- Item 1 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date outfit">Sept 2026 - Present</div>
+                <h4 class="timeline-role">碩士班 / 互動設計學系</h4>
+                <div class="timeline-company">國立臺北科技大學 (NTUT)</div>
+                <p class="timeline-desc">
+                  深入研究互動式多媒體設計、新興科技應用（AI/XR）與使用者體驗（UX），致力於融合前沿技術與實際商業價值。
+                </p>
+              </div>
+              <!-- Item 2 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date outfit">Sept 2022 - June 2026</div>
+                <h4 class="timeline-role">學士班 / 視覺傳達設計系</h4>
+                <div class="timeline-company">明志科技大學 (MCUT)</div>
+                <p class="timeline-desc">
+                  培養深厚的平面視覺美學、展覽策劃、3D 建模與影音創作能力，打下堅實的視覺敘事與品牌視覺設計基礎。
+                </p>
+              </div>
+              <!-- Item 3 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date outfit">Sept 2021 - June 2022</div>
+                <h4 class="timeline-role">學士班 / 商業設計學系</h4>
+                <div class="timeline-company">銘傳大學 (Ming Chuan University)</div>
+                <p class="timeline-desc">
+                  修習商業包裝、廣告企劃與行銷策略，掌握以商業行銷角度出發的視覺提案能力。
+                </p>
+              </div>
+              <!-- Item 4 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date outfit">2019 - 2021</div>
+                <h4 class="timeline-role">高級文憑 / 視覺傳達設計</h4>
+                <div class="timeline-company">香港知專設計學院 (HKDI)</div>
+                <p class="timeline-desc">
+                  主修視覺傳達。接觸廣告文案、展覽規劃及互動媒介，初步探索設計領域的多元性。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Projects Portfolio Grid -->
+    <section id="projects" class="projects-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag outfit">03 / CREATIVE WORKS</span>
+          <h2 class="section-title">Selected Projects / 精選作品</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 01: Taichung Tax Bureau -->
+          <div class="project-card magnetic-hover" data-project="tax_redesign">
+            <div class="project-img-wrapper">
+              <img src="assets/tax_redesign.png" alt="Taichung Tax Bureau Redesign" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">01</span>
+              <span class="project-category outfit">UI/UX Redesign</span>
+              <h3 class="project-title">台中市地方稅務局網站重設</h3>
+            </div>
+          </div>
+
+          <!-- Project 02: UXI Design Website -->
+          <div class="project-card magnetic-hover" data-project="uxi_agency">
+            <div class="project-img-wrapper">
+              <img src="assets/uxi_agency_icons.png" alt="UXI Design Official Website" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">02</span>
+              <span class="project-category outfit">Web Design & Icons</span>
+              <h3 class="project-title">UXI DESIGN 官網改版</h3>
+            </div>
+          </div>
+
+          <!-- Project 03: HKT Teleservices -->
+          <div class="project-card magnetic-hover" data-project="hkt_redesign">
+            <div class="project-img-wrapper">
+              <img src="assets/hkt_redesign_detail2.png" alt="HKT Teleservices Redesign" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">03</span>
+              <span class="project-category outfit">Web Design</span>
+              <h3 class="project-title">HKT Teleservices 官網重設</h3>
+            </div>
+          </div>
+
+          <!-- Project 04: Weather Forecast App -->
+          <div class="project-card magnetic-hover" data-project="weather_app">
+            <div class="project-img-wrapper">
+              <img src="assets/weather_app_main.png" alt="Weather Forecast App" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">04</span>
+              <span class="project-category outfit">Mobile App Design</span>
+              <h3 class="project-title">天氣預報 App 設計</h3>
+            </div>
+          </div>
+
+
+          <!-- Project 05: Water Conservation App -->
+          <div class="project-card magnetic-hover" data-project="water_app">
+            <div class="project-img-wrapper">
+              <img src="assets/water_app_details.png" alt="Water Conservation App" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">05</span>
+              <span class="project-category outfit">Mobile App Design</span>
+              <h3 class="project-title">省水智慧 App 設計</h3>
+            </div>
+          </div>
+
+          <!-- Project 06: Facebook Ad Campaign -->
+          <div class="project-card magnetic-hover" data-project="marketing_ads">
+            <div class="project-img-wrapper">
+              <img src="assets/marketing_ads_new.png" alt="Facebook Ad Campaign" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">06</span>
+              <span class="project-category outfit">Digital Marketing</span>
+              <h3 class="project-title">臉書廣告行銷數據分析</h3>
+            </div>
+          </div>
+
+          <!-- Project 07: Short Video Marketing -->
+          <div class="project-card magnetic-hover" data-project="marketing_shortvideo">
+            <div class="project-img-wrapper">
+              <img src="assets/marketing_shortvideo_detail1.png" alt="Short Video Marketing" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">07</span>
+              <span class="project-category outfit">Video Marketing</span>
+              <h3 class="project-title">社群短影音行銷分析</h3>
+            </div>
+          </div>
+
+          <!-- Project 08: Poster SDG 12 -->
+          <div class="project-card magnetic-hover" data-project="poster_consumption">
+            <div class="project-img-wrapper">
+              <img src="assets/poster_responsible_consumption.png" alt="Responsible Consumption Poster" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">08</span>
+              <span class="project-category outfit">Graphic Design</span>
+              <h3 class="project-title">永續消費與生產海報 (SDG 12)</h3>
+            </div>
+          </div>
+
+          <!-- Project 09: Minzui Real Estate Poster Campaign -->
+          <div class="project-card magnetic-hover" data-project="poster_minzui">
+            <div class="project-img-wrapper">
+              <img src="assets/poster_minzui_main.jpg" alt="Minzui Real Estate Poster Campaign" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">09</span>
+              <span class="project-category outfit">Graphic Design</span>
+              <h3 class="project-title">「本格明水」建案海報設計</h3>
+            </div>
+          </div>
+
+          <!-- Project 10: Christian Fellowship Graphic Design Campaign -->
+          <div class="project-card magnetic-hover" data-project="fellowship_graphics">
+            <div class="project-img-wrapper">
+              <img src="assets/fellowship_graphics_main.jpg" alt="Christian Fellowship Graphic Design Campaign" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">10</span>
+              <span class="project-category outfit">Graphic Design</span>
+              <h3 class="project-title">大專團契與社團視覺設計集</h3>
+            </div>
+          </div>
+
+
+          <!-- Project 11: MMMM SPA Anniversary Poster Campaign -->
+          <div class="project-card magnetic-hover" data-project="spa_poster">
+            <div class="project-img-wrapper">
+              <img src="assets/spa_poster_main.jpg" alt="MMMM SPA Anniversary Poster Campaign" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">11</span>
+              <span class="project-category outfit">Graphic Design</span>
+              <h3 class="project-title">MMMM SPA 週年慶宣傳海報設計</h3>
+            </div>
+          </div>
+
+
+
+          <!-- Project 12: Taoyuan Emblem -->
+          <div class="project-card magnetic-hover" data-project="logo_taoyuan">
+            <div class="project-img-wrapper">
+              <img src="assets/logo_taoyuan.png" alt="Taoyuan City Emblem Redesign" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">12</span>
+              <span class="project-category outfit">Logo Design</span>
+              <h3 class="project-title">桃園市徽標誌重設</h3>
+            </div>
+          </div>
+
+          <!-- Project 13: Logo Collection -->
+          <div class="project-card magnetic-hover" data-project="logo_collection">
+            <div class="project-img-wrapper">
+              <img src="assets/logo_daily_gradient.png" alt="Brand Logo Collection" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">13</span>
+              <span class="project-category outfit">Logo Design</span>
+              <h3 class="project-title">品牌 Logo 與標誌設計集</h3>
+            </div>
+          </div>
+
+          <!-- Project 14: Magazine WOLFS -->
+          <div class="project-card magnetic-hover" data-project="magazine_wolfs">
+            <div class="project-img-wrapper">
+              <img src="assets/magazine_wolfs_v3.png" alt="Magazine Editorial WOLFS" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">14</span>
+              <span class="project-category outfit">Editorial Design</span>
+              <h3 class="project-title">雜誌排版 - 歌手「五堅情」</h3>
+            </div>
+          </div>
+
+          <!-- Project 15: Magazine Japan Building -->
+          <div class="project-card magnetic-hover" data-project="magazine_japan">
+            <div class="project-img-wrapper">
+              <img src="assets/magazine_japan_building.png" alt="Magazine Editorial Japan Building" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">15</span>
+              <span class="project-category outfit">Editorial Design</span>
+              <h3 class="project-title">雜誌排版 - 日本建築特色</h3>
+            </div>
+          </div>
+
+                    <!-- Project 16: Magazine Art -->
+          <div class="project-card magnetic-hover" data-project="magazine_art">
+            <div class="project-img-wrapper">
+              <img src="assets/magazine_art.png" alt="Contemporary Craft Magazine Layout" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">16</span>
+              <span class="project-category outfit">Editorial Design</span>
+              <h3 class="project-title">當代工藝雜誌排版</h3>
+            </div>
+          </div>
+
+          <!-- Project 17: Lonely Island Video -->
+          <div class="project-card magnetic-hover" data-project="lonely_island">
+            <div class="project-img-wrapper">
+              <img src="assets/lonely_island.png" alt="《孤島》MV 創作與自我探索" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">17</span>
+              <span class="project-category outfit">Video Editing</span>
+              <h3 class="project-title">《孤島》MV 創作與自我探索</h3>
+            </div>
+          </div>
+
+          <!-- Project 18: Children's Book Design -->
+          <div class="project-card magnetic-hover" data-project="children_book">
+            <div class="project-img-wrapper">
+              <img src="assets/children_book_main.png" alt="兒童繪本設計" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">18</span>
+              <span class="project-category outfit">Book Design</span>
+              <h3 class="project-title">兒童繪本設計</h3>
+            </div>
+          </div>
+
+          <!-- Project 19: Package Design -->
+          <div class="project-card magnetic-hover" data-project="package_design">
+            <div class="project-img-wrapper">
+              <img src="assets/package_lightbulb.png" alt="紙質燈泡包裝創新結構" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">19</span>
+              <span class="project-category outfit">Package Design</span>
+              <h3 class="project-title">紙質燈泡包裝創新結構</h3>
+            </div>
+          </div>
+
+          <!-- Project 20: Modeling Living room -->
+          <div class="project-card magnetic-hover" data-project="modeling_livingroom">
+            <div class="project-img-wrapper">
+              <img src="assets/modeling_livingroom.png" alt="3D Modern Living Room" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">20</span>
+              <span class="project-category outfit">3D Modeling</span>
+              <h3 class="project-title">3D 室內建模 - 現代客廳</h3>
+            </div>
+          </div>
+
+          <!-- Project 21: Building Model Blender -->
+          <div class="project-card magnetic-hover" data-project="building_model">
+            <div class="project-img-wrapper">
+              <img src="assets/building_model_blender.png" alt="3D 建模與 Blender 動畫創作" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">21</span>
+              <span class="project-category outfit">3D Animation & Modeling</span>
+              <h3 class="project-title">3D 建模與 Blender 動畫創作</h3>
+            </div>
+          </div>
+
+          <!-- Project 22: Photography Collection -->
+          <div class="project-card magnetic-hover" data-project="photography">
+            <div class="project-img-wrapper">
+              <img src="assets/photography_main.jpg" alt="Photography Collection" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">22</span>
+              <span class="project-category outfit">Photography</span>
+              <h3 class="project-title">攝影作品集</h3>
+            </div>
+          </div>
+
+
+          <!-- Project 23: Airport MRT Pillar Ad -->
+          <div class="project-card magnetic-hover" data-project="mrt_ad">
+            <div class="project-img-wrapper">
+              <img src="assets/mrt_ad.png" alt="機場捷運 A4 站柱體包柱廣告" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">23</span>
+              <span class="project-category outfit">OOH / Graphic Design</span>
+              <h3 class="project-title">機場捷運 A4 站柱體包柱廣告</h3>
+            </div>
+          </div>
+
+          <!-- Project 24: My First Book Outdoor Billboard Campaign -->
+          <div class="project-card magnetic-hover" data-project="billboard_myfirstbook">
+            <div class="project-img-wrapper">
+              <img src="assets/billboard_myfirstbook_main.jpg" alt="My First Book Outdoor Billboard Campaign" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">24</span>
+              <span class="project-category outfit">OOH / Graphic Design</span>
+              <h3 class="project-title">My First Book 戶外廣告看板設計</h3>
+            </div>
+          </div>
+
+
+          <!-- Project 25: Gradient Kids Fonts -->
+          <div class="project-card magnetic-hover" data-project="gradient_font">
+            <div class="project-img-wrapper">
+              <img src="assets/gradient_font.png" alt="Gradient Kids 字體與海報設計" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">25</span>
+              <span class="project-category outfit">Typography Design</span>
+              <h3 class="project-title">Gradient Kids 字體與海報設計</h3>
+            </div>
+          </div>
+
+          <!-- Project 26: Mr. Snowman Animation -->
+          <div class="project-card magnetic-hover" data-project="snowman_art">
+            <div class="project-img-wrapper">
+              <img src="assets/snowman_art.png" alt="氣候變遷短片 - 雪人先生" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">26</span>
+              <span class="project-category outfit">3D Modeler & Animator</span>
+              <h3 class="project-title">氣候變遷短片 - 雪人先生</h3>
+            </div>
+          </div>
+
+          <!-- Project 27: Face Recognition Mask -->
+          <div class="project-card magnetic-hover" data-project="recognition_mask">
+            <div class="project-img-wrapper">
+              <img src="assets/recognition_mask_detail1.png" alt="面部識別口罩與防疫海報" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-view-btn outfit">VIEW PROJECT</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num outfit">27</span>
+              <span class="project-category outfit">Product Design & Animation</span>
+              <h3 class="project-title">面部識別口罩與防疫海報</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Interactive Contact Section -->
+    <section id="contact" class="contact-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag outfit">04 / SAY HELLO</span>
+          <h2 class="section-title">Get In Touch / 聯絡我</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-col">
+            <h3 class="contact-headline">Let's create something meaningful together.</h3>
+            <p class="contact-subtext">
+              不論是關於使用者體驗（UI/UX）、新興科技互動設計、商業設計的合作提案，或是任何專案討論，都歡迎透過表單或社群與我聯繫！
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4 class="outfit">Location</h4>
+                  <p>Taipei, Taiwan</p>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h4 class="outfit">Email</h4>
+                  <p>yiphiulam424@gmail.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links-wrapper">
+              <h4 class="outfit">Follow Me</h4>
+              <div class="social-links">
+                <a href="#" class="social-link magnetic" aria-label="LinkedIn"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="social-link magnetic" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+                <a href="#" class="social-link magnetic" aria-label="Instagram"><i
+                    class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link magnetic" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-col">
+            <form id="contact-form" class="contact-form" onsubmit="event.preventDefault(); alert('感謝您的來信！表單傳送成功。');">
+              <div class="form-group">
+                <input type="text" id="name" name="name" required placeholder=" ">
+                <label for="name">Your Name / 您的姓名</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder=" ">
+                <label for="email">Email Address / 電子信箱</label>
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                <label for="message">Your Message / 留言訊息</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-submit magnetic" data-cursor-text="SUBMIT">
+                Send Message <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <span class="outfit">© 2026 YURI YIP. ALL RIGHTS RESERVED.</span>
+        </div>
+        <div class="footer-right">
+          <span class="outfit">Designed with <i class="fa-solid fa-heart text-accent"></i> & Flow of Water</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Interactive Project Details Modal -->
+  <div id="project-modal" class="project-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <!-- Modal Close Button -->
+      <button class="modal-close magnetic" aria-label="Close Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Dynamic Project Content Container -->
+      <div id="modal-project-details" class="modal-body">
+        <!-- Content injected dynamically via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- GSAP Animation Engine -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Custom Logic -->
+  <script src="app.js"></script>
+</body>
+
+</html>
