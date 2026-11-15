@@ -245,8 +245,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Intersection Observer for Bento and Project Cards (Resilient Animation)
-  const cards = document.querySelectorAll('.bento-card, .project-card');
+  // Intersection Observer for Bento, Achievement, and Project Cards (Resilient Animation)
+  const cards = document.querySelectorAll('.bento-card, .achievement-card, .project-card');
   if ('IntersectionObserver' in window) {
     const cardObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
